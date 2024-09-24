@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv('/population.csv')
+df = pd.read_csv('./population.csv')
 df = df.drop(columns = ['Unnamed: 0'])
 #Let's define the list of column headers (country names) (except the first column which is the year)
 unique_names = df['country'].unique().tolist()
