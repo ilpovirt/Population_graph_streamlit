@@ -1,7 +1,10 @@
-#Make graphics
-import pandas as pd
+#Save df_visu in earlier notebook df_visu.to_csv('population_country_columns.csv')
 
-df_visu = pd.read_csv('population_country_columns.csv')
+#Make graphics
+
+import pandas as pd
+url = "https://raw.githubusercontent.com/ilpovirt/Population_graph_streamlit/refs/heads/main/population_country_columns.csv"
+df_visu = pd.read_csv(url)
 df_visu = df_visu.drop(columns = ['Unnamed: 0'])
 
 import streamlit as st
