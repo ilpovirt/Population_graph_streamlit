@@ -30,3 +30,4 @@ columns = st.multiselect('Countries: ',unique_names)
 #Plot the line chart
 st.line_chart(df_visu,x = 'year', y = columns, y_label = 'Population',x_label = 'Year')
 #Terminal: streamlit run .\population_graph.py (if you are in the directory where population_graph.py is)
+#edit the code
